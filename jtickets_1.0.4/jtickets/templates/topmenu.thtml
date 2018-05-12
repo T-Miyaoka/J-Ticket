@@ -1,0 +1,11 @@
+<!-- topmenu.thtml { -->
+<div id="admin-topmenu" class="clearfix">
+  <img src="{icon_url}" class="admin-menu-icon" alt=""{xhtml}>
+  <div>
+    [ <a href="{site_admin_url}/plugins/jtickets/index.php?mode=edit" class="admin-menu-item">新規作成</a> | <a href="{site_admin_url}/plugins/jtickets/index.php?mode=sum" class="admin-menu-item">集計画面</a> | <a href="{site_admin_url}" class="admin-menu-item">管理画面</a> ]
+  </div>
+  <div>
+    チケットの内容やステータスを変更するには「編集アイコン」を、チケットの作成は上の「新規作成」をクリックしてください。
+  </div>
+</div>
+<!-- } topmenu.thtml -->

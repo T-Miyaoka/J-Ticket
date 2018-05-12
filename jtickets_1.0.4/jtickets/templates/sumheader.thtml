@@ -1,0 +1,19 @@
+<!-- summary.thtml { -->
+<form method="post" action=".">
+<div>
+  <input type="submit" name="mode" value="≪戻る"{xhtml}>
+</div>
+</form>
+<table class="admin-list">
+<thead>
+<tr>
+  <th class="admin-list-headerfield" style="text-align: center;">順位</th>
+  <th class="admin-list-headerfield">ユーザーID</th>
+  <th class="admin-list-headerfield">割り当てチケット数</th>
+  <th class="admin-list-headerfield">期限超過チケット数</th>
+  <th class="admin-list-headerfield">決了チケット数</th>
+</tr>
+</thead>
+<tbody>
+{summary_list}
+<!-- } summary.thtml -->

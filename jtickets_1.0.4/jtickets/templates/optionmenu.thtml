@@ -1,0 +1,17 @@
+<!-- optionmenu.thtml { -->
+<form method="post" action=".">
+<fieldset>
+<div>
+  <input type="radio" name="opt1" value="1"{checked1}{xhtml}>すべてのチケットを表示する
+  <input type="radio" name="opt1" value="2"{checked2}{xhtml}>自分に割り当てられているチケットを表示する
+</div>
+</fieldset>
+<div>
+  <input type="checkbox" name="opt2" value="checked" {checked3}{xhtml}>決了したものも表示する
+</div>
+<br/>
+<div>
+  <input type="submit" name="mode" value="リストを更新"{xhtml}>
+</div>
+</form>
+<!-- } optionmenu.thtml -->

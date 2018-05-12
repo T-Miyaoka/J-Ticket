@@ -1,0 +1,22 @@
+<!-- filterheader.thtml { -->
+<form method="post" action=".">
+<div>
+  <input type="hidden" name="mode" value="sum"{xhtml}>
+  <input type="submit" value="≪戻る"{xhtml}>
+</div>
+</form>
+<table class="admin-list">
+<thead>
+<tr>
+  <th class="admin-list-headerfield">編集</th>
+  <th class="admin-list-headerfield">添付</th>
+  <th class="admin-list-headerfield">ステータス</th>
+  <th class="admin-list-headerfield">期限</th>
+  <th class="admin-list-headerfield">タイトル</th>
+  <th class="admin-list-headerfield">内容</th>
+  <th class="admin-list-headerfield">担当者</th>
+</tr>
+</thead>
+<tbody>
+{tickets_list}
+<!-- } filterheader.thtml -->

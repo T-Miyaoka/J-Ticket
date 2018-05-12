@@ -1,0 +1,5 @@
+<!-- tablefooter.thtml { -->
+</tbody>
+</table>
+<div>{message}</div>
+<!-- } tablefooter.thtml -->

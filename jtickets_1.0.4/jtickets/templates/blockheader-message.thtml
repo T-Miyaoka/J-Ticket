@@ -1,0 +1,12 @@
+<!-- blockheader-message.thtml { -->
+
+<div class="block-message">
+<dl>
+  <dt class="title">{msg_title}</dt>
+  <dd class="message">
+    {msg_text}
+  </dd>
+</dl>
+</div>
+
+<!-- } blockfooter-message.thtml -->

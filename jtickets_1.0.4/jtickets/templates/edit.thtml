@@ -1,0 +1,51 @@
+<!-- edit.thtml { -->
+<form enctype="multipart/form-data" method="post" action=".">
+<input type="hidden" name="id" value="{ticket_id}"{xhtml}>
+<div class="admin_basic">
+<fieldset>
+  <dl class="form_block">
+    <dt><label>チケットのタイトル</label></dt>
+    <dd><input type="text" size="48" maxlength="255" name="title" class="text" value="{title}"{xhtml}></dd>
+    <dt><label>チケットの内容</label></dt>
+    <dd><textarea cols="70" rows="12" name="text" class="wide">{text}</textarea></dd>
+    <dt><label>チケットの期限</label></dt>
+    <dd>
+      <select name="limit_year" title="年">
+        {limit_year_options}
+      </select>
+      年
+      <select name="limit_month" title="月">
+        {limit_month_options}
+      </select>
+      月
+      <select name="limit_day" title="日">
+        {limit_day_options}
+      </select>
+      日
+    </dd>
+    <dt><label>チケットの担当者</label></dt>
+    <dd>
+      <select name="uid" title="担当者">
+        {user_options}
+      </select>
+    </dd>
+    <dt><label style="display:{display}">チケットのステータス</label></dt>
+    <dd>
+      <select name="status" title="ステータス" style="display:{display}">
+        {status_options}
+      </select>
+    </dd>
+    <dt><label>添付ファイル</label></dt>
+    <dd style="display:{fupload}"><input type="file" name="upfile"></dd>
+    <dd style="display:{fdelete}"><a href="{site_url}/jtickets/create_file.php?id={ticket_id}" target="_blank">{filename}</a>&nbsp;<input type="checkbox" name="fdelete">削除する</dd>
+    </dd>
+  </dl>
+</fieldset>
+</div>
+<div>
+  <input type="submit" name="mode" value="保存"{xhtml}>&nbsp;&nbsp;
+  <input type="submit" name="mode" value="キャンセル"{xhtml}>&nbsp;&nbsp;
+  <input type="submit" name="mode" value="削除" onclick="return confirm('この項目を削除してもよいですか?');" style="display:{display}"{xhtml}>
+</div>
+</form>
+<!-- } edit.thtml -->
